@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- I can write "id and name" attribute as same
+    (for="user" -> id="user") = To link username with input field 
+    we give same "value" for both attributes i.e for "for and id" 
+    name =  http://127.0.0.1:5500/HTML/from.html?Name=Punith+L -->
+
+
+    <form action="">
+        <fieldset>
+            <legend>Job Application Form</legend>
+        <p>
+            <label for="user">
+                Username: <input type="text" id="user" name="name" placeholder="Enter Username" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="email">
+                EmailId: <input type="text" id="email" name="email" placeholder="Enter Email">
+            </label>
+        </p>
+
+        <p>
+            <label for="phone">
+                Ph No.: <input type="tel" id="phone" name="phone" placeholder="Enter Phone Num.">
+            </label>
+        </p> 
+
+        <p>
+            <label for="dob">
+                DOB : <input type="date" id="dob" name="dob" disabled placeholder="Enter DOB">
+            </label>
+        </p>
+
+        <p>
+            <label for="age">
+                Age: <input type="number" id="age" name="age" readonly placeholder="Enter Age" autofocus>
+            </label>
+        </p>
+
+        <p>
+            <label for="pwd">
+                Password: <input type="password" id="pwd" name="pwd" minlength="10" maxlength="20" placeholder="Enter Pass">
+            </label>
+        </p>
+
+        <p>
+            Number:
+            <input type="number" min="10" max="20">
+        </p>
+
+        <p>
+            Select Gender: 
+            <input type="radio" name="gender">Male
+            <input type="Radio" name="gender">Female
+        </p>
+
+        <p>
+            Skills: 
+            <input type="checkbox" name="skills" value="HTML">HTML
+            <input type="checkbox" name="skills" value="CSS">CSS
+            <input type="checkbox" name="skills" value="JS">JS
+        </p>
+
+        <p>
+            Resume: <input type="file">
+        </p>
+
+        <p>
+            Qualification:
+            <select name="Qualification">
+                <optgroup label="B.E">
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>ISE</option>
+
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            Address:
+            <textarea name="address" cols="10" rows="10">
+            </textarea>
+        </p>
+
+        <input type="Submit">
+        <input type="Reset">
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
