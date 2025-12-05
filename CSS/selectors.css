@@ -1,0 +1,19 @@
+/* SIMPLE SELECTOR = ID(#) */
+#para {
+    background-color: red;
+}
+
+/* SIMPLE SELECTOR = CLASS(.) */
+/* .grouped {
+    background-color: rgb(207, 207, 224);
+} */
+
+/* SIMPLE SELECTOR = GROUPING(,) */
+#para, .grouped {
+    background-color: rgb(207, 207, 224);
+}
+
+/* SIMPLE SELECTOR = UNIVERSAL(*) */
+/* * {
+    background-color: rgb(207, 207, 224);
+} */
