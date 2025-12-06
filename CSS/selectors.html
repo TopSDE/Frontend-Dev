@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="selectors.css">
 </head>
 <body>
-    <!-- Simple Selector = id(#) , class(.), tagname , grouping(,) , universal(*) 
-    universal(*) = Body + Elements inside Body are targeted -->
+    <!-- Simple Selector => id(#) , class(.), tagname , grouping(,) , universal(*) 
+    universal(*) => Body + Elements inside Body are targeted -->
 
-    <p id="para">
+    <!-- <p id="para">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, unde!
     </p>
 
@@ -20,7 +20,54 @@
 
     <p class="grouped">
         Lorem ipsum dolor sit amet.
+    </p> -->
+
+    <!-- 2.Combinator selector = 
+    Descendant(space) => (Children + Grand Children) are Targeted. Ex: div p {}, 
+    child(>) => Targeted only for Children. Ex: div>p {},
+    adjacent(+) => Target only next element. Ex: div+p, 
+    General-sibling(~) => Target all(Here it is p) elements after 
+    one particular element(Here it is div). Ex: div~p -->
+
+    <div>
+        <p>
+            Para1
+        </p>
+
+        <p>
+            Para2
+        </p>
+
+        <section>
+            <p>
+                Para3
+            </p>
+        </section>
+
+        <p>
+            Para4
+        </p>
+
+    </div>
+    
+    <p>
+        Para5
     </p>
+    <p>
+        Para6
+    </p>
+
+    <!-- 3.Pseudo-class selector(:) => first-child,last-child,
+    nth-child, visited,link, active, hover, focus -->
+
+    <!-- 4.Pseudo-element selector(::) = 
+    fisrt-letter => To Change the Color of first letter, 
+    first-line => To Change the first line Color,
+    selection => When we select a particular Text then "Which background Color we need
+    as well as while selecting what should be the Color of text is Decided", 
+    marker => To Change the Color of Disc or Color of <ul> Tag, 
+    before => Add Content before Para, 
+    after => Add Content after Para -->
 
 </body>
 </html>

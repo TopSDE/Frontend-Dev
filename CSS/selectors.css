@@ -1,7 +1,7 @@
 /* SIMPLE SELECTOR = ID(#) */
-#para {
+/* #para {
     background-color: red;
-}
+} */
 
 /* SIMPLE SELECTOR = CLASS(.) */
 /* .grouped {
@@ -9,11 +9,33 @@
 } */
 
 /* SIMPLE SELECTOR = GROUPING(,) */
-#para, .grouped {
+/* #para, .grouped {
     background-color: rgb(207, 207, 224);
-}
+} */
 
 /* SIMPLE SELECTOR = UNIVERSAL(*) */
 /* * {
     background-color: rgb(207, 207, 224);
 } */
+
+/* ------------------- COMBINATOR SELECTOR ----------------------------- */
+
+/* GENERAL-SIBLING */
+div ~p {
+    background-color: Blue;
+}
+
+/* DESCENDANT */
+div p {
+    background-color: red;
+}
+
+/* CHILD */
+/* div >p {
+    background-color: aqua;
+} */
+
+/* ADJACENT */
+div +p {
+    background-color: pink;
+}
