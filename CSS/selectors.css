@@ -21,14 +21,14 @@
 /* ------------------- COMBINATOR SELECTOR ----------------------------- */
 
 /* GENERAL-SIBLING */
-div ~p {
+/* div ~p {
     background-color: Blue;
-}
+} */
 
 /* DESCENDANT */
-div p {
+/* div p {
     background-color: red;
-}
+} */
 
 /* CHILD */
 /* div >p {
@@ -36,6 +36,8 @@ div p {
 } */
 
 /* ADJACENT */
-div +p {
+/* div +p {
     background-color: pink;
-}
+} */
+
+/* ------------------- Pseudo-class selector(:) SELECTOR ----------------------------- */
