@@ -1,0 +1,17 @@
+/* TOP -> RIGHT -> LEFT -> BOTTOM
+    -VE VALpx FOR PADDING -> NO 
+    -VE VALpx FOR MARGIN -> YES */
+
+p {
+    border-style: dotted;
+    border-color: red;
+    border-width: 7px;
+
+    border-left: dotted green;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 10px 10px; /* => TopBottom and LeftRight */ 
+    margin: 10px 20px 30px; /* => Top and LeftRight and Bottom */ 
+    margin: 10px 20px 30px 40px; /* => Top Right Left Bottom */ 
+}

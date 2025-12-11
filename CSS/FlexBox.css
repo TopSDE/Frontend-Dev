@@ -1,0 +1,25 @@
+/* Display Properties is used to arrange the HTML 
+Elements, aligning the HTML elements on the webpage */
+
+/* ---------- BELOW ARE EXTRA PROPERTIES ---------- */
+
+/* div {
+    background-color: red;
+    display: inline; => Convert block -> inline
+}
+
+span {
+    background-color: yellow;
+    display: block; => Convert inline -> block
+} */
+
+/* b {
+    /* To apply height and width propery 
+    to any non semantic Elements we use = display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: wheat;
+    display: inline-block;
+} */
+
+/* ---------- BELOW IS CSS FLEX BOX ---------- */
