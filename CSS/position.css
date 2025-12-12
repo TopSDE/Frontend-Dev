@@ -1,0 +1,78 @@
+/* position: relative => Change Pos. by taking reference to its Curr Pos.
+position: absolute => Change Pos. by taking reference to its Parent Pos.
+position: fixed => No matter what you do, Curr HTML Ele. wont Change its Curr Pos.
+position: sticky => The HTML Ele. Will travel till 100px from top
+and then it sticks it in its postion and wont travel Further */
+
+/* ---------- BELOW IS for position: relative, absolute ---------- */
+/* * {
+    margin: 0px;
+}
+
+#parent {
+    background-color: wheat;
+    height: 400px;
+    width: 400px;
+} */
+
+/* #child1 {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+#child2 {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    /* position: relative;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+} */
+
+/* ---------- BELOW IS for position: fixed ---------- */
+/* * { 
+    margin: 0px;
+    background-color: red;
+}
+
+
+#parent {
+    height: 800px;
+}
+
+#child1  {
+    background-color: blueviolet;
+    position: fixed;
+} */
+
+/* ---------- BELOW IS for position: sticky ---------- */
+* { 
+    margin: 0px;
+    background-color: red;
+}
+
+div {
+    height: 1000px;
+}
+
+section {
+    background-color: blue;
+    width: auto;
+    height: 100px;
+}
+
+h2 {
+    background-color: green;
+    width: auto;
+    height: 100px;
+    position: sticky;
+    top: 100px;
+}
+
+p {
+    background-color: blueviolet;
+    width: auto;
+    height: 100px;
+}

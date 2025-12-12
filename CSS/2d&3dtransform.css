@@ -1,0 +1,15 @@
+/* tranform: scale(2,3) => TO ZOOM IN OR ZOOM OUT THE HTML ELEMENT
+tranform: scale(2,3) => scale(width * 2, height * 3) */
+
+#para {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+
+    transform: scale(2,3);
+    /* transform: translate(30px, 40px); */
+    transform: translateX(20px);
+}
