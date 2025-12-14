@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+
+.nav {
+    background-color: black;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    
+}
+
+.image-1 {
+    position: relative;
+    top: 10px;
+    left: 40px;
+    height: 60px;
+    border-style: solid;
+    border-color: red;
+
+}
+
+.image-2 {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    height: 60px;
+    border-style: solid;
+    border-color: red;
+}
+
+.links {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+a, label {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline dashed red;
+    /* text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: red; */
+}
+
+i.fa-angle-down {
+    color: white;
+    position: relative;
+    top: 5px;
+    /* left: 4px */
+}
+
+i.fa-globe {
+    position: relative;
+    right: 5px;
+}
