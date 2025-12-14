@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        .labels-inputs {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            row-gap: 10px;
+        }
+
+        .radio, .checkbox{
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="">
+        Novell Services Login
+
+        <div class="labels-inputs">
+            <label for="username"> Username:
+            </label>
+            <input id="username">
+
+            <label for="password"> Password:
+            </label>
+            <input id="password">
+            
+            <label for="city"> City of Employment:
+            </label>
+            <input id="city">
+
+            <label> Web server:
+            </label>
+            <select name="Choose Web server">
+                <option disabled selected>
+                    --- Choose Server ---
+                </option>
+                
+                <option>Nginx</option>
+                <option>Apache</option>
+                
+            </select>
+
+            <label for="guest">Please Specify your Role: 
+            </label>
+            <div class="radio">
+                <label>
+                    <input id="admin" type="radio" name="role" value="admin">Admin
+                </label>
+
+                <label>
+                    <input id="engineer" type="radio" name="role" value="engineer"> Engineer
+                </label>
+
+                <label>
+                    <input id="manager" type="radio" name="role" value="manager"> Manager
+                </label>
+
+                <label>
+                    <input id="guest" type="radio" name="role" value="guest"> Guest
+                </label>
+                
+            </div>
+
+            <label for="signon">Single Sign-on to the following:
+            </label>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="signon" value="mad">Mad
+                </label>
+                    
+                <label>
+                    <input type="checkbox"  id="signon" name="signon" value="payroll">Payroll
+                </label>
+                    
+                <label>
+                    <input type="checkbox" name="signon" value="self-service">Self-service
+                </label>              
+            </div> 
+            
+        </div>
+
+        <!-- 
+        Pattern 1️ — Using for + id
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        Pattern 2️ — Wrapping input inside label
+        <label>
+            <input type="radio" name="gender"> Male
+        </label>
+
+        ❌ Do not mix both — it causes confusion. 
+        -->
+
+        <!-- 
+        IN DROPDOWN :
+        - name missing → ❌ nothing is sent
+        - value missing → option text is sent
+        - value="" → empty value is sent
+
+        IN RADIO & CHECKBOX :
+        - name missing → ❌ nothing is sent
+        - value missing → ❌ nothing is sent, 
+            -> It will be "role=on" at the end
+        - value="" → empty value is sent
+
+        - When multiple elements share the same id, 
+          labels point to the last matching element, 
+          causing unexpected selection behavior.
+        - id is like a phone number — it must belong to only one person.
+        - id is unique like Aadhaar number.
+            - If duplicated, browser behavior becomes unpredictable.
+        
+        IN RADIO & CHECKBOX :
+        - If multiple id are given then broswer thinks Group of radio as One Part
+          and Picks the FIRST ONE and it doesnt move forward
+
+        -->
+        
+        <div>
+            <button>Login
+            </button>
+
+            <button>Reset
+            </button>
+        </div>
+
+    </form>
+</body>
+</html>
