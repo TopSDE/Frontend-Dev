@@ -1,0 +1,63 @@
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+/* .parent {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+- @media "screen / print / all" 
+- screen => All device Screen except Printer Screen
+- print => Printer Screen Only
+- all => Either Device Screen can be screen or print 
+
+
+@media screen and (max-width:500px) and (max-height:300px){
+    body {
+        background-color: red;
+    }
+} */
+
+.parent {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 
+    - to right => From Left to Right
+    - to Left => From Right to Left
+    - Degree => Any value "200deg or 500def" 
+    */
+
+    /* background: linear-gradient(500deg, black, white, purple, green, yellow, crimson,
+    pink, aqua, orange, whitesmoke, red, blue, maroon); */
+
+    /* 
+    - Default => Eclipse Shape if Nothing is Mentioned
+    - To Change we need to add "Circle" 
+    */
+
+    /* background: radial-gradient(circle, black, white, purple, green, yellow, crimson,
+    pink, aqua, orange, whitesmoke, red, blue, maroon); */
+
+    /* 
+    - rgb => red, green, blue => range = 0-255 => DEFINITION ON NEXT LINE
+    - "Lower the Value Darker the Shade" 
+    - "Greater the Value Lighter the Shade" 
+
+    - rgba => a = aplha => range = 0-1 => DEFINITION ON NEXT LINE
+    - "Lower the Alpha Value then Lower the Brightness of background-color"
+    - "Higher the Alpha Value then Higer the Brightness of background-color" 
+    */
+
+    /* background-color: rgb(130, 180, 250); */
+    background-color: rgba(130, 180, 250, 0.7); 
+
+}
