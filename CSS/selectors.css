@@ -1,4 +1,4 @@
-/* ------------------- SIMPLE SELECTOR = ID(#) ----------------------------- */
+/* ------------------- SIMPLE SELECTOR ----------------------------- */
 /* #para {
     background-color: red;
 } */
@@ -21,23 +21,58 @@
 /* ------------------- COMBINATOR SELECTOR ----------------------------- */
 
 /* GENERAL-SIBLING */
-/* div ~p {
+/* .parent~h1{
     background-color: Blue;
 } */
 
 /* DESCENDANT */
-/* div p {
+/* .parent h1 {
     background-color: red;
 } */
 
 /* CHILD */
-/* div >p {
+/* .parent>h1 {
     background-color: aqua;
 } */
 
 /* ADJACENT */
-/* div +p {
+/* div+h1 {
     background-color: pink;
 } */
 
 /* ------------------- Pseudo-class selector(:) SELECTOR ----------------------------- */
+
+/* .parent :first-child{
+    background-color: blue;
+} */
+
+/* .parent :last-child{
+    background-color: blue;
+} */
+
+/* .parent :nth-child(2) {
+    background-color: red;
+} */
+
+/* .fp:visited {
+    color: black;
+} */
+
+/* am:link {
+    color: maroon;
+} */
+
+/* .fp:active {
+    color: aqua;
+} */
+
+/* .fp:hover {
+    color: green;
+} */
+
+/* .fp:focus {
+    color: aqua;
+} */
+
+/* ------------------- Pseudo-Element selector(::) SELECTOR ----------------------------- */
+

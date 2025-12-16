@@ -1,0 +1,23 @@
+.parent :first-child{
+    background-color: blue;
+}
+
+.parent :last-child{
+    background-color: blue;
+}
+
+.parent :nth-child(1) {
+    background-color: red;
+}
+
+.fl:visited {
+    color: black;
+}
+
+a:link {
+    color: maroon;
+}
+
+.fp:focus {
+    color: aqua;
+}

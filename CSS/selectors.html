@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="selectors.css">
 </head>
 <body>
-    <!-- Simple Selector => id(#) , class(.), tagname , grouping(,) , universal(*) 
-    universal(*) => Body + Elements inside Body are targeted -->
+
+    <!-- ------------------- SIMPLE SELECTOR ----------------------------- -->
+
+    <!-- 
+    Simple Selector => id(#) , class(.), tagname , grouping(,) , universal(*) 
+    universal(*) => Body + Elements inside Body are targeted 
+    -->
 
     <!-- <p id="para">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, unde!
@@ -22,75 +27,110 @@
         Lorem ipsum dolor sit amet.
     </p> -->
 
-    <!-- 2.Combinator selector = 
+    <!-- ------------------- COMBINATOR SELECTOR ----------------------------- -->
+
+    <!-- 
+    2.Combinator selector = 
     Descendant(space) => (Children + Grand Children) are Targeted. Ex: div p {}, 
     child(>) => Targeted only for Children. Ex: div>p {},
     adjacent(+) => Target only next element. Ex: div+p, 
     General-sibling(~) => Target all(Here it is p) elements after 
-    one particular element(Here it is div). Ex: div~p -->
-
-    <!-- <div>
-        <p>
-            Para1
-        </p>
-
-        <p>
-            Para2
-        </p>
-
-        <section>
-            <p>
-                Para3
-            </p>
-        </section>
-
-        <p>
-            Para4
-        </p>
-
-    </div>
-    
-    <p>
-        Para5
-    </p>
-    <p>
-        Para6
-    </p> -->
-
-    <!-- 3.Pseudo-class selector(:) => 
-    first-child => To Target First Child,
-    last-child => To Target Last Child,
-    nth-child = To Target any Child except First nd Last nd This includes the , 
-    visited => To Change the Color of Visited Link,,
-    link => To Change the Color of Unvisited Link, 
-    active => To Change the Color of Working Link, 
-    hover => To Change the Background-Color of Hypertext When Hovered, 
-    focus = When User Clicks inside the input Field then Only That Filed is Focused and 
-    when we again click on other thing then the focus is removed 
+    one particular element(Here it is div). Ex: div~p 
     -->
 
-    <div>
-        <p>
-            Para1
-        </p>
+    <!-- ------------------- Pseudo-class selector(:) SELECTOR ----------------------------- -->
 
-        <p>
-            Para2
-        </p>
+    <!-- 
+    3.Pseudo-class selector(:) => 
+    - first-child => To Target First Child of (Parent + Grand Parent),
+    - last-child => To Target Last Child of (Parent + Grand Parent),
+    - nth-child = To Target "nth Child" of (Parent + Grand Parent), 
+    SYNTAX : .parent :nth-child(1) {
+                background-color: blue;
+            }
 
-        <p>
-            Para3
-        </p>
+    2) .parent:nth-child(1) {
+            background-color: blue;
+        } -> IF THE SPACE IS NOT THERE IN BTWN ".parent" 
+        and "nth-child(1)" means "nth-child(1)" will be
+        applied for the "WHOLE DIV"
+
+    - visited => To Change the Color of Visited Link,,
+    - link => To Change the Color of Unvisited Link, 
+    - active => To Change the Color of Working Link,
+    SYNTAX : a:link {
+        color: maroon;
+    }
+
+    - hover => To Change the Background-Color 
+    of Hypertext When Hovered
+    
+    - focus = When "User Clicks" or 
+    "When you reach it using the keyboard (Tab key)" 
+    then only the Color of Link gets Changed to "aqua(Ex. Taken here)"
+    and "This remains till the Focus is Removed"
+    -->
+
+    <div class="parent">
+        <h1>
+            P1
+        </h1>
+
+        <h1>
+            P2
+        </h1>
+
+        <div class="child">
+            <h1>
+                P3
+            </h1>
+
+            <h1>
+                P4
+            </h1>
+
+        </div>
+        
+        <h1>
+            P5
+        </h1>
+
+        <h1>
+            P6
+        </h1>
+    
     </div>
 
-    <!-- 4.Pseudo-element selector(::) = 
+    <h1>
+        P7
+    </h1>
+
+    <h1>
+        P8
+    </h1>
+
+    <a class="am" href="">Amazon</a> 
+    <!-- => IF HREF IS EMPTY THEN "STILL IT POINTS TO CURR PAGE" -->
+    <!-- <a class="fp" href="https://www.flipkart.in/">Flipkart</a> -->
+
+    <a class="fp" href="#">Flipkart</a>
+
+    <!-- ------------------- Pseudo-Element selector(::) SELECTOR ----------------------------- -->
+
+    <!-- 
+    4.Pseudo-element selector(::) = 
     fisrt-letter => To Change the Color of first letter, 
     first-line => To Change the first line Color,
     selection => When we select a particular Text then "Which background Color we need
     as well as while selecting what should be the Color of text is Decided", 
     marker => To Change the Color of Disc or Color of <ul> Tag, 
     before => Add Content before Para, 
-    after => Add Content after Para -->
+    after => Add Content after Para 
+    -->
+
+
+
+
 
 </body>
 </html>
