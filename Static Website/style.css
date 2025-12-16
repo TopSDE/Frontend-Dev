@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    /* display: flex; */
+}
+
+.left-part, .middle-part, .right-part {
+    height: 100%;
+    width: 30%;
+    border-style: solid;
+    border-color: red;
+} 
