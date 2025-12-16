@@ -76,3 +76,29 @@
 
 /* ------------------- Pseudo-Element selector(::) SELECTOR ----------------------------- */
 
+h2::first-letter{
+    color: blue;
+}
+
+p::first-line{
+    color: red;
+}
+
+p::selection {
+    background-color: aqua;
+    color: blue;
+}
+
+ul li::marker {
+    color: green;
+}
+
+p::before {
+    content: '👉 ';
+    color: orange;
+}
+
+p::after {
+    content: ' ✔';
+    color: green;
+}
