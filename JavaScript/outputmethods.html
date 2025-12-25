@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="outputmethods.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    - document.write() writes content directly into the HTML page. 
+
+    HTML follows this rule:
+        - Any sequence of whitespace (space, tab, newline \n) is rendered as ONE space
+
+    JS produces: User Sees this txt\nHi
+    HTML rendering rule: \n  →  " "
+    So final output becomes: User Sees this txt Hi
+
+    - document.write() → writes text
+    - document.writeln() → writes text + \n
+    - HTML ignores \n, so it appears as a space
+    - Use <br> for line breaks 
+    
+    -->
+
+    <!-- 
+    <script>
+        document.writeln("User Sees this txt<br>")
+        document.writeln("Hi");
+    </script> 
+    -->
+
+</body>
+</html>
