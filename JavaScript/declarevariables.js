@@ -89,7 +89,3 @@ function test() {
 //let b = 10;
 
 
-
-console.log(w)
-const w = 1;
-
