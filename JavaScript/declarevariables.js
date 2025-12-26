@@ -87,3 +87,9 @@ function test() {
 // Hoisting cant be done Here
 //console.log(b); // ❌ ReferenceError: Cannot access 'b' before initialization
 //let b = 10;
+
+
+
+console.log(w)
+const w = 1;
+
