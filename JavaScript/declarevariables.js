@@ -8,7 +8,7 @@ x = 10 // initialisation                             --> "YES"
 console.log(x)
 
 
-// scope of var = Func Scope : a variable is declared inside a function, 
+// scope of var = Func Scope : if a variable is declared inside a function then,
 // I cannot access it outside the function.
 // If it is declared inside a block, I can access it outside the block.
 function test() {
@@ -88,4 +88,23 @@ function test() {
 //console.log(b); // ❌ ReferenceError: Cannot access 'b' before initialization
 //let b = 10;
 
+// 4️ What is Temporal Dead Zone (TDZ)?
+// 👉 TDZ is the time between the start of the 
+// block and the variable declaration line
+
+// Below is TDZ visual example
+// {
+//     // TDZ starts here
+//     console.log(x); // ❌ ReferenceError
+
+//     let x = 5;      // TDZ ends here
+//     console.log(x); // ✅ 5
+// }
+
+// 6️ Why TDZ exists (important)
+// TDZ was introduced to:
+// - Prevent bugs
+// - Force clean code
+// - Avoid using variables before they are ready
+// This is why let and const are safer than var
 
