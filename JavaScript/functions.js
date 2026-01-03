@@ -177,7 +177,7 @@ Ex:
     function counter() {
         let count = 0;
 
-        return function () {
+        return function() {
             count++;
             console.log(count);
         };
@@ -198,3 +198,39 @@ Ex:
         - timers
         - callbacks
 */
+
+// -------------------------------------------------
+
+/*
+5️ What currying ACTUALLY means
+Correct definition:
+    Currying is transforming a function with multiple arguments 
+    into a sequence of functions each taking one argument.
+
+    Currying = function taking one arg at a time at each step + closure
+
+*/
+
+/*
+Ex:
+function sum(a) {
+    return function(b) {
+        return function(c) {
+            console.log(a + b + c)
+        }
+    }
+}
+sum(1)(2)(3)
+*/
+
+// -------------------------------------------------
+/*
+1️ What is an IIFE?
+    An IIFE is a function that is created and 
+    executed immediately after its definition.
+*/
+
+(function () {
+    console.log("Hello");
+})   // function expression
+()    // immediate invocation
