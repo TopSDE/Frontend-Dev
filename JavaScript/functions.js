@@ -209,6 +209,13 @@ Correct definition:
 
     Currying = function taking one arg at a time at each step + closure
 
+    Closure chain:
+        { a: 1 }
+            ↓
+        { b: 2 }
+            ↓
+        { c: 3 }
+
 */
 
 /*
@@ -230,7 +237,10 @@ sum(1)(2)(3)
     executed immediately after its definition.
 */
 
+/*
+Ex:
 (function () {
     console.log("Hello");
 })   // function expression
 ()    // immediate invocation
+*/
