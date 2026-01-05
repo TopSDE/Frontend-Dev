@@ -244,3 +244,31 @@ Ex:
 })   // function expression
 ()    // immediate invocation
 */
+
+// -------------------------------------------------
+/*
+1️ What is an Arrow Function?
+    - Arrow function is a "shorter way to write a function" in JavaScript.
+    - It was introduced in ES6 (2015).
+
+    Main purpose:
+        ✔ Reduce syntax
+        ✔ Write clean and short code
+        ✔ Very useful in callbacks (events, map, filter, etc.)
+
+Normal function:
+    function add(a, b) {
+        return a + b;
+    }
+
+Arrow function:
+    const add = (a, b) => console.log(a + b);
+
+- It is mandatory to use block if function consists of multiple lines of
+  code or if we use return keyword in function.
+  Example:
+    Let x=(a,b)=>console.log(a+b);
+    Let y=(a,b)=>{return a + b };
+*/
+
+// -------------------------------------------------
