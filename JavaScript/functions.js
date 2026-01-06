@@ -272,3 +272,35 @@ Arrow function:
 */
 
 // -------------------------------------------------
+/*
+1️ What is a Higher Order Function (HOF)?
+👉 A Higher Order Function is a function that does at least one of these:
+
+    - Takes another function as an argument, OR
+    - Returns a function
+
+    If any one is true → it is a Higher Order Function.
+
+    Example 1:
+    function greet(name) {
+        return "Hello " + name;
+    }
+    function processUser(name, fn) {
+        return fn(name);   // calling passed function
+    }
+    console.log(processUser("Punith", greet));
+
+    Here,
+        - processUser => HOF (Higher Order Func)
+        - greet       => Call Back Func
+
+    *** Array methods are Higher Order Functions
+
+    | Term                  | Meaning                              |
+    | --------------------- | ------------------------------------ |
+    | Callback function     | Function passed as argument      |
+    | Higher Order Function | Function that accepts a function |
+*/
+
+// -------------------------------------------------
+
