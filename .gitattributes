@@ -1,2 +1,9 @@
-**/*.js linguist-detectable=true
-**/*.css linguist-detectable=true
+# Force language detection
+*.html linguist-language=HTML
+*.js   linguist-language=JavaScript
+*.css  linguist-language=CSS
+
+# Ensure files are counted
+*.html linguist-detectable=true
+*.js   linguist-detectable=true
+*.css  linguist-detectable=true
