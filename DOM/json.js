@@ -1,4 +1,3 @@
-
 var emp = {
     Ename: "sheela",
     Eid: 21,
