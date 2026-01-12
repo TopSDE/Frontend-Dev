@@ -1,4 +1,21 @@
 /*
+1) ANONYMOUS Function
+2) NAMED Function
+3) Function WITH Expression
+4) NESTED Function
+    - they are unidirectional
+    - lexical scoping / scope chaining
+    - closure
+    - closure consists of only req properties
+    - Block is also treated as scope since ES6
+    - Closures are useful in event-driven JavaScript
+5) JS currying
+6) IIFE 
+7) Arrow Function
+8) HOF nd Call Back Function
+*/
+
+/*
 function demo(a, b) {
     console.log(a / b) // Infinity
     console.log(a % b) // NaN
@@ -285,10 +302,10 @@ Arrow function:
     function greet(name) {
         return "Hello " + name;
     }
-    function processUser(name, fn) {
-        return fn(name);   // calling passed function
+    function processUser(name, fn) {           //HOF
+        return fn(name);
     }
-    console.log(processUser("Punith", greet));
+    console.log(processUser("Punith", greet)); //Call Back Func
 
     Here,
         - processUser => HOF (Higher Order Func)
