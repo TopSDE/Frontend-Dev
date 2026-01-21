@@ -17,7 +17,6 @@
 /* KEYFRAME => RULE TO ENABLE ANIMATION
 WITHOUT KEYFRAME ANIMATION WONT WORK */
 
-
 @keyframes ex {
     /* from {
         background-color: blue;
